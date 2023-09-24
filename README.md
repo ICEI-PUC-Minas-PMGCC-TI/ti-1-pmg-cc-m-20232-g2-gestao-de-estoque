@@ -9,7 +9,8 @@ Escreva um ou dois parágrafo resumindo o objetivo do seu projeto.
 * Gabriel Samarane Ribeiro
 * Lucca  
 * Gabriel Filipe Lanza Candido
-*
+* Samuel Ferreira Campos
+* Alessandra Faria
 
 ## Professores responsáveis
 
