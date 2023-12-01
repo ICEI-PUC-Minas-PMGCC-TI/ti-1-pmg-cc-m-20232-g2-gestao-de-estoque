@@ -1,0 +1,63 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+h1 {
+  color: #333;
+}
+
+#searchInput {
+  padding: 10px;
+  margin-right: 5px;
+  width: 200px;
+}
+
+#employeeCardContainer {
+  margin-top: 20px;
+}
+
+.employeeCard {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+form {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-top: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"] {
+  padding: 10px;
+  margin-bottom: 10px;
+  width: calc(100% - 20px); /* Desconta o padding */
+  box-sizing: border-box; /* Inclui padding na largura */
+}
+
+input[type="submit"] {
+  background-color: #4CAF50; /* Cor verde */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+label {
+  margin-top: 10px;
+}
+

@@ -1,0 +1,71 @@
+header {
+    margin: 0 1%;
+    margin-top: 1%;
+    display: block;
+    text-align: center;
+    border: 1px dotted #000;
+    border-radius: 20px;
+}
+
+/* Caixa de Fornecedores*/
+
+.caixafor {
+    float: left;
+    width: 65%;
+    border: 1px dotted;
+    border-radius: 10px;
+    margin: 1% 0;
+    margin-left: 2%;
+}
+
+.caixafor img {
+    float: left;
+    width: 200px;
+    height: 200px;
+    padding: 5px;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+
+li {
+    font-size: large;
+}
+
+/* Engrenagem */
+.caixafor a {
+    float: right;
+    font-size: 25px;
+    margin-right: 1%;
+}
+
+/* Caixa de anotações */
+
+.notes {
+    float: left;
+    width: 30%;
+    height: 200px;
+    border: 1px dotted;
+    border-radius: 10px;
+    font-size: large;
+    margin: 1% 0;
+    margin-right: 2%;
+    margin-left: 1%;
+    padding: 1%;
+    text-align: center;
+
+}
+
+/* Extras */
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: blue;
+}
+
+ul {
+    list-style-type: none;
+}
