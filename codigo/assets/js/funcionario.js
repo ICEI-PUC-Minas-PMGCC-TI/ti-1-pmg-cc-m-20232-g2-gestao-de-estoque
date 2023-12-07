@@ -1,3 +1,12 @@
+function isAdmin() {
+  const usuarioJson = localStorage.getItem("Usuario");
+  if (usuarioJson) {
+    const usuario = JSON.parse(usuarioJson);
+    return usuario.admin === true;
+  }
+  return false;
+}
+
 function searchEmployee() {
   console.log("clicked");
   const searchValue = document.getElementById('searchInput').value;
@@ -62,16 +71,21 @@ function showAll() {
 }
 
 function deleteFuncionario(id) {
-  fetch(`https://jsonserver.samaranegabriel.repl.co/funcionarios/${id}`, {
-    method: 'DELETE'
-  })
-    .then(response => {
-      if (response.ok) {
-        alert('Funcionário deletado com sucesso!');
-        window.location.reload(); // Atualiza a página para mostrar os novos funcionários
-      } else {
-        alert('Erro ao deletar funcionário!');
-      }
+  if (isAdmin()) {
+    fetch(`https://jsonserver.samaranegabriel.repl.co/funcionarios/${id}`, {
+      method: 'DELETE'
     })
+      .then(response => {
+        if (response.ok) {
+          alert('Funcionário deletado com sucesso!');
+          window.location.reload(); // Atualiza a página para mostrar os novos funcionários
+        } else {
+          alert('Erro ao deletar funcionário!');
+        }
+      })
+  }
+  else {
+    alert("SOMENTE ADMINISTRADORES PODEM DELETAR FUNCIONÁRIOS");
+  }
 }
 
