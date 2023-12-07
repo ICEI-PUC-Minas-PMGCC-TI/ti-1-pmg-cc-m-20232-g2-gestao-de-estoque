@@ -20,6 +20,8 @@
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
         crossorigin="anonymous"></script>
     <script src="../assets/js/funcionario.js"></script>
+    <script src = "../assets/js/general.js"></script>
+
 </head>
 
 <body>
@@ -27,44 +29,52 @@
     <div class="container-fluid p-0 d-flex h-100">
         <div id="bdSidebar" class="d-flex flex-column flex-shrink-0 p-3 bg-dark text-white offcanvas-md offcanvas-start"
             style="width: 280px;">
-            <a href="../index.html" class="navbar-brand">
+            <a href="homepage.html" class="navbar-brand">
                 <h5>Stockify</h5>
             </a>
+            <span id="usernameDisplay">Usuario:</span>
             <hr>
             <ul class="mynav nav nav-pills flex-column mb-auto">
-                <li class="nav-item mb-1">
-                    <a href="calendario.html" class="" onclick="btn1()">
-                        Calendário
-                    </a>
-                </li>
-                <li class="nav-item mb-1">
-                    <a href="#" class="" onclick="btn2()">
-                        Administração de Funcionários
-                    </a>
-                </li>
-                <li class="nav-item mb-1">
-                    <a href="#" class="" onclick="btn3()">
-                        Estoque
-                    </a>
-                </li>
-                <li class="nav-item mb-1">
-                    <a href="#" class="" onclick="btn4()">
-                        Cadastro de Produtos
-                    </a>
-                </li>
-                <li class="nav-item mb-1">
-                    <a href="#" class="" onclick="btn5()">
-                        Link 5
-                    </a>
-                </li>
-                <li class="nav-item mb-1">
-                    <a href="#" class="" onclick="btn6()">
-                        Link 6
-                    </a>
-                </li>
+                <ul class="mynav nav nav-pills flex-column mb-auto">
+                    <li class="nav-item mb-1">
+                        <a href="calendario.html" class="" onclick="btn1()">
+                            Calendário
+                        </a>
+                    </li>
+                    <li class="nav-item mb-1">
+                        <a href="funcionarios.html" class="" onclick="btn2()">
+                            Administração de Funcionários
+                        </a>
+                    </li>
+                    <li class="nav-item mb-1">
+                        <a href="alimentos.html" class="" onclick="btn3()">
+                            Estoque
+                        </a>
+                    </li>
+                    <li class="nav-item mb-1">
+                        <a href="cadastroAlimento.html" class="" onclick="btn4()">
+                            Cadastro de Produtos
+                        </a>
+                    </li>
+                    <li class="nav-item mb-1">
+                        <a href="fornecedor.html" class="" onclick="btn5()">
+                            Fornecedores
+                        </a>
+                    </li>
+                    <li class="nav-item mb-1">
+                        <a href="#" class="" onclick="">
+                            Suporte
+                        </a>
+                    </li>
+                    <li class="nav-item mb-1">
+                        <a class="" onclick="logout()">
+                            Logout
+                        </a>
+                    </li>
+
+                </ul>
             </ul>
         </div>
-
         <div class="bg-light flex-fill">
             <div class="p-2 d-md-none d-flex text-white bg-dark">
                 <a href="#" class="text-white" data-bs-toggle="offcanvas" data-bs-target="#bdSidebar">

@@ -19,7 +19,7 @@ function cadastraFuncionario(event) {
     body: JSON.stringify(formData),
   })
     .then(response => response.json())
-    console.log("enviado")
+    alert("FUNCIONARIO CADASTRADO COM SUCESSO");
     .then(data => {
       console.log('Sucesso:', data);
       alert('Funcionário cadastrado com sucesso!');

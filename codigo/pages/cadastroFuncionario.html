@@ -21,6 +21,7 @@
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../assets/css/cadastroFuncionario.css">
     <script src="../assets/js/cadastroFuncionario.js"></script>
+    <script src = "../assets/js/general.js"></script>
 </head>
 
 <body>
@@ -28,9 +29,10 @@
     <div class="container-fluid p-0 d-flex h-100">
         <div id="bdSidebar" class="d-flex flex-column flex-shrink-0 p-3 bg-dark text-white offcanvas-md offcanvas-start"
             style="width: 280px;">
-            <a href="index.html" class="navbar-brand">
+            <a href="homepage.html" class="navbar-brand">
                 <h5>Stockify</h5>
             </a>
+            <span id="usernameDisplay">Usuario:</span>
             <hr>
             <ul class="mynav nav nav-pills flex-column mb-auto">
                 <ul class="mynav nav nav-pills flex-column mb-auto">
@@ -55,15 +57,21 @@
                         </a>
                     </li>
                     <li class="nav-item mb-1">
-                        <a href="#" class="" onclick="btn5()">
-                            Cadastro de Funcionários
+                        <a href="fornecedor.html" class="" onclick="btn5()">
+                            Fornecedores
                         </a>
                     </li>
                     <li class="nav-item mb-1">
-                        <a href="#" class="" onclick="btn6()">
-                            Link 6
+                        <a href="#" class="" onclick="">
+                            Suporte
                         </a>
                     </li>
+                    <li class="nav-item mb-1">
+                        <a class="" onclick="logout()">
+                            Logout
+                        </a>
+                    </li>
+
                 </ul>
             </ul>
         </div>
