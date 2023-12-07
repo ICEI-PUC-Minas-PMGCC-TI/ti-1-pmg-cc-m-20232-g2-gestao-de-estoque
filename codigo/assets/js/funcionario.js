@@ -87,5 +87,26 @@ function deleteFuncionario(id) {
   else {
     alert("SOMENTE ADMINISTRADORES PODEM DELETAR FUNCIONÁRIOS");
   }
+
+   
 }
 
+function updateFuncionario(id) {
+  if (isAdmin()) {
+    fetch(`https://jsonserver.samaranegabriel.repl.co/funcionarios/${id}`, {
+      method: 'PUT'
+    })
+      .then(response => {
+        if (response.ok) {
+          alert('Funcionário deletado com sucesso!');
+          window.location.reload(); // Atualiza a página para mostrar os novos funcionários
+        } else {
+          alert('Erro ao deletar funcionário!');
+        }
+      })
+  }
+  else {
+    alert("SOMENTE ADMINISTRADORES PODEM DELETAR FUNCIONÁRIOS");
+  }
+
+}

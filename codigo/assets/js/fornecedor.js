@@ -38,10 +38,11 @@ const deleteClient = async (id) => {
 
 // Funções para manipulação do modal
 const openModal = () => {
-    console.log("entrou na funcao openmodal")
-    document.getElementById('modal').classList.add('active')
-
+    const modal = document.getElementById('modal');
+    modal.classList.add('active');
+    console.log("Modal classes after openModal:", modal.className);
 }
+
     const closeModal = () => {
     clearFields()
     document.getElementById('modal').classList.remove('active')
@@ -144,6 +145,7 @@ const editDelete = async (event) => {
         }
     }
 }
+
 
 
 // Event Listeners

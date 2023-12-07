@@ -11,17 +11,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="../assets/css/funcionario.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../assets/css/navbar.css">
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
         crossorigin="anonymous"></script>
-    <script src="../assets/js/funcionario.js"></script>
-    <script src="../assets/js/general.js"></script>
-
+    <link rel="stylesheet" href="../assets/css/cadastroFuncionario.css">
+    <script src="../assets/js/atualizaFuncionario.js"></script>
+    <script src = "../assets/js/general.js"></script>
 </head>
 
 <body>
@@ -75,6 +75,7 @@
                 </ul>
             </ul>
         </div>
+
         <div class="bg-light flex-fill">
             <div class="p-2 d-md-none d-flex text-white bg-dark">
                 <a href="#" class="text-white" data-bs-toggle="offcanvas" data-bs-target="#bdSidebar">
@@ -84,24 +85,33 @@
             </div>
             <div class="p-4">
                 <div id="content">
-                    <div class="form-container"> <!--ADICIONAR O CONTEÚDO DO HTML DENTRO DESSA DIV-->
-                        <h1 class="text-center">Administração de Funcionários</h1>
-                        <input type="text" id="searchInput" placeholder="Buscar por nome ...">
-
+                    <form id="atualizaForm" class="form-container">
+                        <h2 class="text-center">Atualização de Funcionário</h2>
+                        <form id="cadastroForm" class="form-container">
+                            <label for="nome" class="">Nome:</label><br>
+                            <input type="text" id="nome" name="nome" required class="input-text m-2 rounded-2 border-1 align-items-lg-start"><br>
+    
+                            <label for="email">Email:</label><br>
+                            <input type="email" id="email" name="email" required class="input-text m-2 rounded-2 border-1"><br>
+    
+                            <label for="senha">Senha:</label><br>
+                            <input type="password" id="senha" name="senha" required class="input-text m-2 rounded-2 border-1"><br>
+    
+                            <label for="idade">Idade:</label><br>
+                            <input type="number" id="idade" name="idade" required class="input-text m-2 rounded-2 border-1"><br>
+    
+                            <label for="cpf">CPF:</label><br>
+                            <input type="text" id="cpf" name="cpf" required class="input-text m-2 rounded-2 border-1"><br>
+    
+                            <label for="salario">Salário:</label><br>
+                            <input type="number" id="salario" name="salario" required class="input-text m-2 rounded-2 border-1"><br>
+                            <div class="text-center">
+                        </form>
                         <div class="text-center">
-                            <button onclick="searchEmployee()" class="btn bg-dark text-white">Buscar</button>
-                            <button onclick="showAll()" class="btn bg-dark text-white">Mostrar Todos</button>
-                            <a href="../pages/cadastroFuncionario.html"><button
-                                    class="btn bg-dark text-white">Cadastrar</button>
-                            </a>
-                            <a href="../pages/atualizaFuncionario.html"><button
-                                    class="btn bg-dark text-white">Atualizar</button>
-                            </a>
+                            <input type="submit" value="Atualizar" class="btn bg-dark text-white mt-3 w-50">
                         </div>
-                    </div>
-                    <div id="employeeCardContainer"></div>
+                    </form>
                 </div>
-
             </div>
         </div>
 

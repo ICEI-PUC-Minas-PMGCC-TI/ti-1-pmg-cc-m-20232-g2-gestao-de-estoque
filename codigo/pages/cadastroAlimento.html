@@ -25,7 +25,7 @@
 
 <body>
 
-  <div class="container-fluid p-0 d-flex h-auto">
+  <div class="container-fluid p-0 d-flex h-100">
     <div id="bdSidebar" class="d-flex flex-column flex-shrink-0 p-3 bg-dark text-white offcanvas-md offcanvas-start"
       style="width: 280px;">
       <a href="homepage.html" class="navbar-brand">
@@ -79,9 +79,7 @@
       <div class="p-4">
         <div id="content">
           <div class="form-container">
-            <div class="header">
-              <span>Cadastro de Produtos</span>
-            </div>
+            <h2 class="text-center">Cadastro de Produtos</h2>
             <form>
               <label for="m-Produto">Produto</label>
               <input id="m-Produto" type="text" required />
@@ -100,8 +98,9 @@
 
               <label for="m-Fornecedor">Data de Validade </label>
               <input id="m-Data" type="text" required />
-
-              <button id="btnSalvar">Salvar</button>
+              <div class="text-center">
+              <button id="btnSalvar" class="btn bg-dark text-white mt-3 w-50">Salvar</button>
+              </div>
 
             </form>
           </div>

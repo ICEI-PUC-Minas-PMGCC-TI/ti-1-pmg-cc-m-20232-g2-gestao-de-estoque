@@ -51,7 +51,8 @@ function login() {
                 const usuarioJSON = {
                     email: usuario.email,
                     nome: usuario.nome,
-                    admin: usuario.admin
+                    admin: usuario.admin,
+                    id: usuario.id
                 };
                 
                 const usuarioSalvo = JSON.stringify(usuarioJSON);
