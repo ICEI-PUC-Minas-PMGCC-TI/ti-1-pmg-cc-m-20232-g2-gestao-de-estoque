@@ -37,8 +37,11 @@ function displayResults(resultados) {
     const html = resultados.map(alimento => `
     <div>
         <h3>${alimento.nome}</h3>
+        <p>Categoria: ${alimento.categoria}</p>
         <p>Quantidade: ${alimento.quantidade}</p>
+        <p>Fornecedor: ${alimento.fornecedor}</p>
         <p>Lote: ${alimento.lote}</p>
+        <p>Data: ${alimento.data}</p>
     </div>
     `).join('');
 

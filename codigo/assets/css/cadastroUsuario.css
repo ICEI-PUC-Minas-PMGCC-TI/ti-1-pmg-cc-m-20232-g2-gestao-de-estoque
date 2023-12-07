@@ -1,0 +1,266 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+ /*logo*/
+img {
+    max-width: 150px;
+    max-height: 150px;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Rubik', sans-serif;
+    position: relative;
+}
+
+header {
+    background-color: #6D597A;
+    text-align: center;
+    line-height: 40px;
+   /* -- */padding-bottom: 15px;
+    
+}
+
+main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 90%;
+    margin: 2% auto;
+    padding: 50px;
+    gap: 20px;
+    box-shadow: 2px 2px 10px black;
+    
+}
+
+/*estilizando o botão de adicionar- editar- excluir*/
+.button {
+    border-style: none;
+    height: 40px;
+    width: max-content;
+    padding: 10px;
+    background-color: #6D597A;
+    color: white;
+    cursor: pointer;
+}
+
+.button.editar {
+    background-color: greenyellow;
+    
+}
+
+.button.excluir {
+    background-color: red;
+}
+
+.tabela {
+    width: 100%;
+    /*usuario nao consegue selecionar e copiar as informações da tabela*/
+    user-select: none;
+    text-align: left;
+
+}
+
+/*records - tabela*/
+/*cabeçalho da tabela*/
+.tabela th {
+    height: 50px;
+    background-color: #6D597A;
+    color: black;
+    padding-left: 10px;
+}
+
+/*conteudo da tabela*/
+.tabela td {
+    height: 70px;
+    padding-left: 20px;
+}
+
+.tabela tr:hover {
+    background-color: rgb(203, 203, 203);
+}
+
+/*modal*/
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #00000090;
+    opacity: 0;
+    z-index: -1;
+}
+
+.modal.active {
+    opacity: 1;
+    z-index: 1;
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 50vw;
+    margin: 15vh auto;
+    padding-bottom: 20px;
+    background-color: white;
+    box-shadow: 1px 1px 10px black;
+}
+
+.modal-header {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    height: 40px;
+    line-height: 40px;
+    color: white;
+}
+
+
+.modal-close {
+    position: absolute;
+    right: 0;
+    display: block;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    background-color: #6D597A;
+    user-select: none;
+    cursor: pointer;
+
+}
+
+.modal-close:hover {
+    background-color: blueviolet;
+}
+
+.modal-form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.modal-field {
+    width: calc(50% - 10px);
+    height: 40px;
+    outline-style: none;
+    border-style: none;
+    box-shadow: 0 0 2px black;
+    padding: 0 10px;
+    font-size: 1rem;
+}
+
+/*focus= só vai ter a borda no campo que o usuario clicar*/
+.modal-field:focus {
+    border: 2px solid #6D597A;
+    box-shadow: 0 0 3px #6D597A;
+}
+
+.modal-footer {
+    background-color: inherit;
+    text-align: right;
+    padding: 0 20px;
+}
+
+footer {
+    width: 100;
+    text-align: center;
+    font-weight: 200;
+    font-style: italic;
+    padding: 20px;
+    
+}
+
+@media (max-width: 480px) {
+    .header{
+        position:fixed;
+       
+    }
+    .header-title{
+        font-size: 1.5rem;
+    }
+
+    main {
+        padding: 0;
+        margin: 0 0 0 0;
+        width: 100%;
+        box-shadow: none;
+    }
+
+    .button.mobile {
+        color: transparent;
+        font-size: 0;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        position: fixed;
+        top: 90vh;
+        left: 80vw;
+    }
+
+    .button.mobile::before {
+        content: "+";
+        color: black;
+        font-size: 2rem;
+        width: 100%;
+        height: 100%;
+    }
+
+    .tabela {
+        border-spacing: 5px;
+    }
+
+    .tabela thead {
+        display: none;
+    }
+
+    .tabela tr{
+        box-shadow: 0 1px 3px black;
+    }
+
+    .tabela td:not(:first-child){
+        display: flex;
+        justify-content: space-between;
+        padding: 0px ;
+    }
+
+    .tabela td{
+        margin: 10px 0;
+    }
+
+    .tabela tr:hover{
+        background-color: inherit;
+    }
+
+    .modal {
+        top: 100%;
+        transition: all 1s ease;
+    }
+
+    .modal.active {
+        top: 0;
+    }
+
+    .modal-content {
+        margin: 0;
+        width: 100%;
+        position: fixed;
+    }
+
+    .modal-field {
+        width: 100%;
+
+    }
+
+
+}
+
