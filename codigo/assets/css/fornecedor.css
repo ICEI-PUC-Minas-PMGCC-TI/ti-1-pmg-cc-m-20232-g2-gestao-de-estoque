@@ -38,16 +38,24 @@ main {
     background-color: #0b0a0c;
     color: white;
     cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border-radius: 5px;
+}
+
+.button:hover{
+    background-color: #444242;
 }
 
 
 .button.editar {
-    background-color: greenyellow;
+    background-color: #ccc;
     
 }
 
 .button.excluir {
-    background-color: red;
+    background-color: rgb(156, 24, 24);
 }
 
 .tabela {
@@ -121,15 +129,15 @@ main {
     display: block;
     width: 40px;
     height: 40px;
+    background-color: #ccc;
     text-align: center;
-    background-color: #6D597A;
     user-select: none;
     cursor: pointer;
 
 }
 
 .modal-close:hover {
-    background-color: blueviolet;
+    background-color: #9c9c9c;
 }
 
 .modal-form {
@@ -145,7 +153,7 @@ main {
     height: 40px;
     outline-style: none;
     border-style: none;
-    box-shadow: 0 0 2px black;
+    box-shadow: 0 0 2px rgb(99, 97, 97);
     padding: 0 10px;
     font-size: 1rem;
 }
