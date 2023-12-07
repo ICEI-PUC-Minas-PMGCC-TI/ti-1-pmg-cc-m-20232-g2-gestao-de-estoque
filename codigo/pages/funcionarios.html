@@ -73,17 +73,20 @@
                 <span class="ms-3">Stockify</span>
             </div>
             <div class="p-4">
-                <div id="content"> <!--ADICIONAR O CONTEÚDO DO HTML DENTRO DESSA DIV-->
-                    <h1 class="d-block">Administração de Funcionários</h1>
-                    <div class="d-flex">
-                        <input type="text" id="searchInput" placeholder="Buscar por nome ..."
-                            class="input-text m-2 w-100 rounded-2">
-                        <button onclick="searchEmployee()" class="btn btn-dark m-2">Buscar</button>
-                        <button onclick="showAll()" class="btn btn-dark m-2">Mostrar Todos</button>
-                        <button
-                            class="btn btn-dark m-2"><a href="./cadastroFuncionario.html" class="text-decoration-none text-white">Cadastrar</a></button>
+                <div id="content">
+                    <div class="form-container"> <!--ADICIONAR O CONTEÚDO DO HTML DENTRO DESSA DIV-->
+                    <h1 class="text-center">Administração de Funcionários</h1>
+                        <input type="text" id="searchInput" placeholder="Buscar por nome ...">
+
+                        <div class="text-center">
+                        <button onclick="searchEmployee()" class="btn bg-dark text-white">Buscar</button>
+                        <button onclick="showAll()" class="btn bg-dark text-white">Mostrar Todos</button>
+                        <a href="../pages/cadastroFuncionario.html"><button
+                            class="btn bg-dark text-white">Cadastrar</button></a>
+                        </div>
                     </div>
                     <div id="employeeCardContainer"></div>
+                </div>
 
                 </div>
             </div>

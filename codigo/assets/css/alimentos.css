@@ -1,0 +1,13 @@
+#results{
+    display: flex;
+    margin: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between; /* ou justify-content: flex-start; */
+    gap: 16px
+}
+
+
+input{
+    width: 50%;
+    display: block;
+}
