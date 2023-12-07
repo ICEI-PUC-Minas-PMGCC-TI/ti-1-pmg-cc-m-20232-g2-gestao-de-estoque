@@ -40,25 +40,6 @@ body {
   border-radius: 2px;
 }
 
-#employeeCardContainer{
-  display: flex;
-  margin: 20px;
-}
-
-.employeeCard {
-  border: 1px solid #ccc;
-  padding: 10px;
-  margin-right: 10px;
-  margin-bottom: 10px;
-  border-radius: 5px;
-
-}
-
-.employeeCard header {
-  font-weight: bold;
-  margin-bottom: 5px;
-}
-
 #results{
   display: inline-flex;
   border: 1px solid #ccc;

@@ -1,0 +1,20 @@
+#employeeCardContainer {
+    display: flex;
+    margin: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between; /* ou justify-content: flex-start; */
+    gap: 16px
+}
+
+.employeeCard {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+  
+.employeeCard header {
+    font-weight: bold;
+    margin-bottom: 5px;
+}

@@ -2,7 +2,6 @@ header {
     margin: 0 1%;
     margin-top: 1%;
     display: block;
-    text-align: center;
     border: 1px dotted #000;
     border-radius: 20px;
 }
@@ -55,7 +54,6 @@ li {
 
 }
 
-/* Extras */
 
 a {
     color: black;
@@ -63,7 +61,7 @@ a {
 }
 
 a:hover {
-    color: blue;
+    color: rgb(94, 94, 94);
 }
 
 ul {
