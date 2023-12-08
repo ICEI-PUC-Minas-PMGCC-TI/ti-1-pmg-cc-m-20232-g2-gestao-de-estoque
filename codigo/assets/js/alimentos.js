@@ -35,14 +35,16 @@ function displayResults(resultados) {
     }
 
     const html = resultados.map(alimento => `
-    <div>
-        <h3>${alimento.nome}</h3>
-        <p>Categoria: ${alimento.categoria}</p>
-        <p>Quantidade: ${alimento.quantidade}</p>
-        <p>Fornecedor: ${alimento.fornecedor}</p>
-        <p>Lote: ${alimento.lote}</p>
-        <p>Data: ${alimento.data}</p>
-    </div>
+        <div class="card">
+            <div class="card-body">
+                <h3 class="card-title">${alimento.nome}</h3>
+                <p class="card-text">Categoria: ${alimento.categoria}</p>
+                <p class="card-text">Quantidade: ${alimento.quantidade}</p>
+                <p class="card-text">Fornecedor: ${alimento.fornecedor}</p>
+                <p class="card-text">Lote: ${alimento.lote}</p>
+                <p class="card-text">Data: ${alimento.data}</p>
+            </div>
+        </div>
     `).join('');
 
     resultsDiv.innerHTML = html;

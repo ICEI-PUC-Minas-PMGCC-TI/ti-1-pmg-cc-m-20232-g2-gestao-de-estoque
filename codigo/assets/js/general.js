@@ -22,11 +22,19 @@ function getUsuarioData() {
 const usuarioData = getUsuarioData();
 
 document.addEventListener('DOMContentLoaded', function () {
+    const usernameDisplay = document.getElementById("usernameDisplay");
+    const emailDisplay = document.getElementById("emailDisplay");
 
     if (usuarioData.nome) {
-        document.getElementById("usernameDisplay").textContent += " " + usuarioData.nome;
+        usernameDisplay.textContent += " " + usuarioData.nome;
     } else {
-        document.getElementById("usernameDisplay").textContent += " Não identificado";
+        usernameDisplay.textContent += " Não identificado";
+    }
+
+    if (usuarioData.email) {
+        emailDisplay.textContent = usuarioData.email;
+    } else {
+        emailDisplay.textContent = "Email não identificado";
     }
 });
 

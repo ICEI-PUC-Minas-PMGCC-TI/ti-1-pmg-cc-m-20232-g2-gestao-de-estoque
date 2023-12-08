@@ -74,40 +74,54 @@
         </ul>
       </ul>
     </div>
-
     <div class="bg-light flex-fill">
-      <div class="p-4">
-        <div id="content">
-          <div class="form-container">
-            <h2 class="text-center">Cadastro de Produtos</h2>
-            <form>
-              <label for="m-Produto">Produto</label>
-              <input id="m-Produto" type="text" required />
-
-              <label for="m-Categoria">Categoria</label>
-              <input id="m-Categoria" type="text" required />
-
-              <label for="m-Quantidade">Quantidade</label>
-              <input id="m-Quantidade" type="number" required />
-
-              <label for="m-Fornecedor">Fornecedor</label>
-              <input id="m-Fornecedor" type="text" required />
-
-              <label for="m-Fornecedor">Lote</label>
-              <input id="m-Lote" type="text" required />
-
-              <label for="m-Fornecedor">Data de Validade </label>
-              <input id="m-Data" type="text" required />
-              <div class="text-center">
-              <button id="btnSalvar" class="btn bg-dark text-white mt-3 w-50">Salvar</button>
-              </div>
-
-            </form>
-          </div>
-
-        </div>
+      <div class="p-2 d-md-none d-flex text-white bg-dark">
+          <a href="#" class="text-white" data-bs-toggle="offcanvas" data-bs-target="#bdSidebar">
+              <i class="fa-solid fa-bars"></i>
+          </a>
+          <span class="ms-3">Stockify</span>
       </div>
-    </div>
+      <div class="p-4">
+          <div id="content"> <!--ADICIONAR O CONTEÚDO DO HTML DENTRO DESSA DIV-->
+            <div class="bg-light flex-fill">
+              <div class="p-4">
+                <div id="content">
+                  <div class="form-container">
+                    <h2 class="text-center">Cadastro de Produtos</h2>
+                    <form>
+                      <label for="m-Produto">Produto</label>
+                      <input id="m-Produto" type="text" required />
+        
+                      <label for="m-Categoria">Categoria</label>
+                      <input id="m-Categoria" type="text" required />
+        
+                      <label for="m-Quantidade">Quantidade</label>
+                      <input id="m-Quantidade" type="number" required />
+        
+                      <label for="m-Fornecedor">Fornecedor</label>
+                      <input id="m-Fornecedor" type="text" required />
+        
+                      <label for="m-Fornecedor">Lote</label>
+                      <input id="m-Lote" type="text" required />
+        
+                      <label for="m-Fornecedor">Data de Validade </label>
+                      <input id="m-Data" type="text" required />
+                      <div class="text-center">
+                      <button id="btnSalvar" class="btn bg-dark text-white mt-3 w-50">Salvar</button>
+                      </div>
+        
+                    </form>
+                  </div>
+        
+                </div>
+              </div>
+            </div>  
+          </div>
+      </div>
+
+  </div>
+
+   
 </body>
 
 </html>
