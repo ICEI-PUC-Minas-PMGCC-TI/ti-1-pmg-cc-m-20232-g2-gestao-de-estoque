@@ -85,90 +85,6 @@ main {
     background-color: rgb(203, 203, 203);
 }
 
-/*modal*/
-.modal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #00000090;
-    opacity: 0;
-    z-index: -1;
-}
-
-.modal.active {
-    opacity: 1;
-    z-index: 1;
-}
-
-.modal-content {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    width: 50vw;
-    margin: 15vh auto;
-    padding-bottom: 20px;
-    background-color: white;
-    box-shadow: 1px 1px 10px black;
-}
-
-.modal-header {
-    display: flex;
-    position: relative;
-    justify-content: center;
-    height: 40px;
-    line-height: 40px;
-    color: white;
-}
-
-
-.modal-close {
-    position: absolute;
-    right: 0;
-    display: block;
-    width: 40px;
-    height: 40px;
-    background-color: #ccc;
-    text-align: center;
-    user-select: none;
-    cursor: pointer;
-
-}
-
-.modal-close:hover {
-    background-color: #9c9c9c;
-}
-
-.modal-form {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 20px;
-    padding: 0 20px;
-}
-
-.modal-field {
-    width: calc(50% - 10px);
-    height: 40px;
-    outline-style: none;
-    border-style: none;
-    box-shadow: 0 0 2px rgb(99, 97, 97);
-    padding: 0 10px;
-    font-size: 1rem;
-}
-
-/*focus= só vai ter a borda no campo que o usuario clicar*/
-.modal-field:focus {
-    border: 2px solid #6D597A;
-    box-shadow: 0 0 3px #6D597A;
-}
-
-.modal-footer {
-    background-color: inherit;
-    text-align: right;
-    padding: 0 20px;
-}
 
 footer {
     width: 100;
@@ -238,26 +154,6 @@ footer {
 
     .tabela tr:hover{
         background-color: inherit;
-    }
-
-    .modal {
-        top: 100%;
-        transition: all 1s ease;
-    }
-
-    .modal.active {
-        top: 0;
-    }
-
-    .modal-content {
-        margin: 0;
-        width: 100%;
-        position: fixed;
-    }
-
-    .modal-field {
-        width: 100%;
-
     }
 
 

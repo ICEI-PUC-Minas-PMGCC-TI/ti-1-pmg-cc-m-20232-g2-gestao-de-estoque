@@ -39,15 +39,15 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
-
-console.log("Nome:", usuarioData.nome);
-console.log("Email:", usuarioData.email);
-
 //REGIAO DEDICADA PARA CONTROLAR AUTENTICAÇAO DE USUARIO E LOGOUT//
 
 function login() {
     const email = document.getElementById('email').value;
     const senha = document.getElementById('senha').value;
+
+    console.log("Nome:", usuarioData.nome);
+    console.log("Email:", usuarioData.email);
+
 
     fetch('https://jsonserver.samaranegabriel.repl.co/funcionarios')
         .then(response => response.json())
@@ -55,14 +55,14 @@ function login() {
             const usuario = usuarios.find(u => u.email === email && u.senha === senha);
             if (usuario) {
                 console.log(usuario);
-        
+
                 const usuarioJSON = {
                     email: usuario.email,
                     nome: usuario.nome,
                     admin: usuario.admin,
                     id: usuario.id
                 };
-                
+
                 const usuarioSalvo = JSON.stringify(usuarioJSON);
 
                 localStorage.setItem('Usuario', usuarioSalvo);

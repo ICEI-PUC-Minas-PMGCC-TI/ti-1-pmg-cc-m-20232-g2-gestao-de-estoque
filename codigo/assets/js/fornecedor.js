@@ -36,25 +36,8 @@ const deleteClient = async (id) => {
     });
 }
 
-// Funções para manipulação do modal
-const openModal = () => {
-    const modal = document.getElementById('modal');
-    modal.classList.add('active');
-    console.log("Modal classes after openModal:", modal.className);
-}
-
-    const closeModal = () => {
-    clearFields()
-    document.getElementById('modal').classList.remove('active')
-}
-
 // Validação de campos e limpeza de campos
 const isValidFields = () => document.getElementById('form').reportValidity()
-const clearFields = () => {
-    const fields = document.querySelectorAll('.modal-field')
-    fields.forEach(field => field.value = "")
-    document.getElementById('nome').dataset.index = 'new'
-}
 
 // Salvar Cliente
 const saveClient = async () => {
@@ -74,7 +57,6 @@ const saveClient = async () => {
             await updateClient(id, client);
             alert("Fornecedor atualizado com sucesso!");
         }
-        closeModal();
         await updateTable();
     }
 }
@@ -87,10 +69,7 @@ const createRow = (client, index) => {
         <td>${client.categoria}</td>
         <td>${client.celular}</td>
         <td>${client.endereco}</td>
-        <td>
-            <button type="button" class="button editar" id="edit-${client.id}">Editar</button>
-            <button type="button" class="button excluir" id="delete-${client.id}">Excluir</button>
-        </td>
+
     `;
     document.querySelector('#tableClient>tbody').appendChild(newRow);
 }
@@ -108,24 +87,6 @@ const updateTable = async () => {
     dbClient.forEach(createRow);
 }
 
-// Preencher campos para edição
-const fillFields = (client) => {
-    document.getElementById('nome').value = client.fornecedor;
-    document.getElementById('telefone').value = client.celular;
-    document.getElementById('endereco').value = client.endereco;
-    document.getElementById('categoria').value = client.categoria;
-    document.getElementById('nome').dataset.index = client.id;
-}
-
-// Editar Cliente
-const editClient = async (id) => {
-    const dbClient = await readClient();
-    const client = dbClient.find(client => client.id == id);
-    fillFields(client);
-    openModal();
-}
-
-// Manipulador para editar e excluir
 // Manipulador para editar e excluir
 const editDelete = async (event) => {
     if (event.target.type == 'button') {
@@ -133,7 +94,7 @@ const editDelete = async (event) => {
         console.log(`Action: ${action}, ID: ${id}`); // Adiciona log para depuração
         if (action == 'edit') {
             console.log(`Editando cliente com ID: ${id}`); // Log ao tentar editar
-            await editClient(id);
+            // Implemente a lógica de edição aqui. Você pode redirecionar para outra página ou usar outra estratégia.
         } else if (action == 'delete') {
             console.log(`Excluindo cliente com ID: ${id}`); // Log ao tentar excluir
             const client = (await readClient()).find(client => client.id == id);
@@ -146,14 +107,8 @@ const editDelete = async (event) => {
     }
 }
 
-
-
-// Event Listeners
-document.getElementById('cadastrarFornecedor').addEventListener('click', openModal);
-document.getElementById('modalClose').addEventListener('click', closeModal);
-document.getElementById('salvar').addEventListener('click', saveClient);
+// Event Listener para a tabela
 document.querySelector('#tableClient>tbody').addEventListener('click', editDelete);
-document.getElementById('cancelar').addEventListener('click', closeModal);
 
 // Inicialização
 updateTable();
