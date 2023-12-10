@@ -70,7 +70,7 @@ function login() {
                 alert('Login bem-sucedido!');
 
                 // Redirecionar para index.html
-                window.location.href = 'pages/homepage.html';
+                window.location.href = 'homepage.html';
 
             } else {
                 alert('Email ou senha incorretos.');

@@ -10,7 +10,7 @@ function isAdmin() {
 function searchEmployee() {
   console.log("clicked");
   const searchValue = document.getElementById('searchInput').value;
-  const url = searchValue ? `https://sprint3.samaranegabriel.repl.co/funcionarios?nome_like=${searchValue}` : 'https://sprint3.samaranegabriel.repl.co/funcionarios';
+  const url = searchValue ? `https://jsonserver.samaranegabriel.repl.co/funcionarios?nome_like=${searchValue}` : 'https://jsonserver.samaranegabriel.repl.co/funcionarios';
 
   fetch(url)
     .then(response => response.json())
