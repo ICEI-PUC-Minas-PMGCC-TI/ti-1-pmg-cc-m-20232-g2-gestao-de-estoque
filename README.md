@@ -8,7 +8,7 @@ Durante o desenvolvimento, mantemos um ciclo de feedback com nosso público-alvo
 
 * Douglas Nicolas Silva Gomes
 * Gabriel Samarane Ribeiro
-* Lucca  
+* Luca Lourenço Araújo Dal Bianco Gonzaga  
 * Gabriel Filipe Lanza Candido
 * Samuel Ferreira Campos
 * Alessandra Faria
