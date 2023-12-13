@@ -3,63 +3,31 @@ cff-version: 1.0.1
 message: Please cite this software using these metadata.
 title: 
 authors:
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names:
+  - family-names: Samarane Ribeiro
+    given-names: Gabriel
+  - family-names: Nicolas Silva Gomes
+    given-names: Douglas
+  - family-names: Lourenço Araújo Dal Bianco Gonzaga
+    given-names: Luca
+  - family-names: Filipe Lanza Candido
+    given-names: Gabriel
+  - family-names: Ferreira Campos
+    given-names: Samuel
+  - family-names: Faria
+    given-names: Alessandra
   - name-suffix: Professor
     affiliation: PUC Minas
-    family-names: 
-    given-names: 
-  - name-suffix: Professor
-    affiliation: PUC Minas
-    family-names: 
-    given-names: 
-keywords:
-  - 
-  - 
-repository-code: 
-license: CC-BY-4.0
-version: 1.0.0
-date-released: 2022-07-14
-=======
-cff-version: 1.0.1
-message: Please cite this software using these metadata.
-title: 
-authors:
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names:
-  - name-suffix: Professor
-    affiliation: PUC Minas
-    family-names: 
-    given-names: 
+    family-names: Carneiro
+    given-names: Rommel
   - name-suffix: Professor
     affiliation: PUC Minas
     family-names: 
     given-names: 
 keywords:
-  - 
-  - 
-repository-code: 
+  - Gestão
+  - Controle
+repository-code: https://github.com/ICEI-PUC-Minas-PMGCC-TI/ti-1-pmg-cc-m-20232-g2-gestao-de-estoque
 license: CC-BY-4.0
 version: 1.0.0
-date-released: 2022-07-14
->>>>>>> 576e4073eb686b7caee5801aac8f95491eb4d605
+date-released: 2023-13-12
+
